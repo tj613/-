@@ -1,0 +1,26 @@
+{
+  "createdAt": "2026-05-26T11:14:03.481Z",
+  "settings": {
+    "adminPasswordHash": ""
+  },
+  "codes": [],
+  "sessions": {},
+  "adminSessions": {
+    "BDRG4hVutFO-XCYBJdRYttHIf9bTax-f": {
+      "createdAt": "2026-05-26T12:18:30.843Z",
+      "lastSeen": "2026-05-26T13:11:42.383Z"
+    },
+    "iU1MJGeos4wNvacOECqXM9mO7nLlz79i": {
+      "createdAt": "2026-05-26T12:24:05.362Z",
+      "lastSeen": "2026-05-26T12:24:05.366Z"
+    },
+    "c2sRQgfWnH5nsYdI7ln8MZhslOVlFT8n": {
+      "createdAt": "2026-05-26T12:36:49.665Z",
+      "lastSeen": "2026-05-26T12:36:49.678Z"
+    },
+    "Ucv5z0qEPC5v1pu_dznvE0VoAulLGjT-": {
+      "createdAt": "2026-05-26T13:16:03.618Z",
+      "lastSeen": "2026-05-26T13:16:03.618Z"
+    }
+  }
+}

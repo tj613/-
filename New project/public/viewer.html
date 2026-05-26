@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>文档阅读</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body class="viewer-page">
+  <header class="topbar">
+    <div>
+      <p class="eyebrow">已授权</p>
+      <strong id="viewerCode">正在校验</strong>
+    </div>
+    <button id="logoutBtn" class="ghost-button">退出</button>
+  </header>
+  <main class="reader-shell" id="readerShell">
+    <div id="watermarkLayer" class="watermark-layer" aria-hidden="true"></div>
+    <div id="pdfPages" class="pdf-pages" aria-label="PDF 文档"></div>
+    <div id="privacyMask" class="privacy-mask">阅读已暂停</div>
+  </main>
+  <script type="module" src="/viewer.js"></script>
+</body>
+</html>

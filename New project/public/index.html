@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>卡密验证</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body class="auth-page">
+  <main class="auth-shell">
+    <section class="auth-panel">
+      <div>
+        <p class="eyebrow">Protected PDF</p>
+        <h1 class="auth-title">
+          <span>输入卡密</span>
+          <strong>卡密请联系3577567882</strong>
+        </h1>
+      </div>
+      <form id="activationForm" class="form-stack">
+        <label>
+          <span>卡密</span>
+          <input id="code" name="code" autocomplete="one-time-code" placeholder="PDF-XXXX-XXXX-XXXX" required>
+        </label>
+        <button type="submit">验证并进入</button>
+        <p id="message" class="message"></p>
+      </form>
+    </section>
+  </main>
+  <script src="/client.js"></script>
+</body>
+</html>

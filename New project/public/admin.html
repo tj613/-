@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>卡密后台</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body class="admin-page">
+  <main class="admin-shell">
+    <section id="loginPanel" class="admin-login">
+      <p class="eyebrow">Admin</p>
+      <h1>卡密后台</h1>
+      <form id="adminLoginForm" class="form-stack">
+        <label>
+          <span>管理员密码</span>
+          <input id="adminPassword" type="password" autocomplete="current-password">
+        </label>
+        <button type="submit">进入后台</button>
+        <p id="adminLoginMessage" class="message"></p>
+      </form>
+    </section>
+
+    <section id="adminPanel" class="hidden">
+      <header class="admin-header">
+        <div>
+          <p class="eyebrow">License Manager</p>
+          <h1>卡密管理</h1>
+        </div>
+        <button id="adminLogoutBtn" class="ghost-button">退出</button>
+      </header>
+
+      <form id="generateForm" class="toolbar">
+        <label>
+          <span>前缀</span>
+          <input id="prefix" value="PDF" maxlength="8">
+        </label>
+        <label>
+          <span>数量</span>
+          <input id="count" type="number" min="1" max="200" value="5">
+        </label>
+        <button type="submit">生成卡密</button>
+      </form>
+      <form id="passwordForm" class="password-toolbar">
+        <label>
+          <span>后台新密码</span>
+          <input id="newAdminPassword" type="password" autocomplete="new-password" placeholder="留空并保存 = 删除密码">
+        </label>
+        <button type="submit">保存密码</button>
+        <p id="passwordMessage" class="message"></p>
+      </form>
+      <textarea id="generatedCodes" readonly placeholder="新生成的卡密会显示在这里"></textarea>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>卡密</th>
+              <th>状态</th>
+              <th>绑定设备</th>
+              <th>绑定时间</th>
+              <th>最后访问</th>
+              <th>次数</th>
+              <th>操作</th>
+            </tr>
+          </thead>
+          <tbody id="codesBody"></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+  <script src="/admin.js"></script>
+</body>
+</html>

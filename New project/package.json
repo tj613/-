@@ -1,0 +1,12 @@
+{
+  "name": "key-locked-pdf-viewer",
+  "version": "1.0.0",
+  "private": true,
+  "description": "One-device activation code protected PDF viewer with admin management.",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
